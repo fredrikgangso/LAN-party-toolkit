@@ -15,12 +15,13 @@ args = argparser.parse_args()
 
 logging.basicConfig(level=logging.DEBUG) if args.verbose else None
 
+
 class RouterSpeedTest:
     def __init__(self):
         """
         initializes the RouterSpeedTest class.
         """
-        self.routerNumber = args.router if args.router else "x"
+        self.routerNumber = args.router if args.router is not None else "x"
         logging.debug(f"router number: {self.routerNumber}")
 
         self.currentDate = datetime.date.today()
