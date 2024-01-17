@@ -25,7 +25,7 @@ cd LAN-party-toolkit
 
 #### 1. Create a virtual environment
 ```bash
-py -m venv .venv
+python -m venv .venv
 ```
 #### 2. Activate the virtual environment
 ```bash
